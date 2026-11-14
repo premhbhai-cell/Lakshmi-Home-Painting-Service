@@ -1,0 +1,1 @@
+Put your own photos here (jpg): int, ext, tex, wood, wp, h  -> e.g. img/int.jpg. Until then, coloured gradients show.
