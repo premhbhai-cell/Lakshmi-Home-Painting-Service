@@ -1,1 +1,1 @@
-Put your own photos here (jpg): int, ext, tex, wood, wp, h  -> e.g. img/int.jpg. Until then, coloured gradients show.
+Website image folder. The supplied brand logo is stored locally as logo.png. Service photographs are referenced by HTTPS URLs in the HTML background-image styles; see IMAGE-SOURCES.txt.

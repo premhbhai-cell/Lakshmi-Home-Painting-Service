@@ -43,3 +43,85 @@ details{border-bottom:1px solid #ddd;padding:16px 0}summary{cursor:pointer;font-
  .bnav .mid{color:#c0392b}
  .fab{bottom:96px}
 }
+
+/* Responsive layout hardening: prevent document-wide horizontal scrolling on phones */
+html, body { width:100%; max-width:100%; overflow-x:hidden; overflow-x:clip; }
+body { min-width:0; }
+*, *::before, *::after { box-sizing:border-box; }
+img, svg, video, iframe { max-width:100%; }
+.wrap, header, footer, section, main { min-width:0; max-width:100%; }
+.card, .pc, .ph, .tile, .bc, .panel, .two > *, .g2 > *, .g3 > *, .g4 > *, .split > *, .mas2 > *, .fcols > * { min-width:0; }
+.ph { background-size:cover; background-position:center; }
+.card, .pc, .tile, .bc, .ph { transition:transform .28s ease, box-shadow .28s ease, filter .28s ease; }
+.card:hover, .pc:hover, .tile:hover, .bc:hover, .ph:hover { transform:translateY(-5px); box-shadow:0 14px 30px rgba(0,0,0,.14); }
+.card:focus-visible, a:focus-visible, button:focus-visible { outline:3px solid #f5c04a; outline-offset:3px; }
+@media (max-width:860px) {
+  html, body { overflow-x:hidden !important; overflow-x:clip !important; }
+  body { width:100%; padding-bottom:94px !important; }
+  header { width:100%; padding:8px 14px; gap:10px; }
+  header > a { min-width:0; flex:0 1 auto; }
+  .logo { display:block; width:auto; max-width:min(58vw,170px); height:auto; max-height:48px; object-fit:contain; }
+  .logo.w { max-width:170px; }
+  .top { width:100%; padding:8px 10px; font-size:11px; line-height:1.45; overflow-wrap:anywhere; }
+  .wrap { width:100%; padding:34px 16px; }
+  .hero, .hero.small { width:100%; min-height:420px; }
+  .hero .wrap { padding:34px 16px; }
+  .hero h1 { font-size:clamp(30px,9vw,48px); line-height:1.08; overflow-wrap:anywhere; }
+  .two, .split, .mas2 { grid-template-columns:minmax(0,1fr) !important; gap:22px; }
+  .g2, .g3 { grid-template-columns:minmax(0,1fr) !important; }
+  .g4 { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:12px; }
+  .fcols { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:18px; }
+  .mas { columns:2; column-gap:10px; }
+  .mas a { break-inside:avoid; margin-bottom:10px; }
+  .story { min-width:0; min-height:190px; }
+  .hs { width:100%; max-width:100%; overflow-x:auto; overscroll-behavior-x:contain; -webkit-overflow-scrolling:touch; }
+  .hs > * { flex:0 0 min(78vw,280px); min-width:0; }
+  .festive .hs > * { flex-basis:min(72vw,240px); }
+  .split .bg { min-height:230px; }
+  .pad { padding:30px 18px; }
+  .ph { max-width:100%; }
+  .tall, .port { min-height:220px; }
+  .land { min-height:210px; }
+  .sq { min-height:170px; }
+  .btn { max-width:100%; white-space:normal; }
+  .enq { min-width:0; width:100%; }
+  .enq input, .enq select, .enq textarea { min-width:0; max-width:100%; }
+  .fab { right:14px !important; bottom:102px !important; width:54px; height:54px; z-index:110; box-shadow:0 7px 22px rgba(0,0,0,.25); }
+  .bnav { z-index:105; width:100%; }
+  .sheet { width:100%; }
+  .card, .pc, .tile, .bc { box-shadow:0 5px 18px rgba(0,0,0,.10); border:1px solid rgba(0,0,0,.045); }
+  .card:active, .pc:active, .tile:active, .bc:active, .ph:active { transform:scale(.985); box-shadow:0 12px 24px rgba(0,0,0,.16); }
+  .mas2 h3 { font-size:26px; }
+  .feat { min-height:280px; }
+  .feat .ov { padding:22px; }
+  .fcols > * { overflow-wrap:anywhere; }
+}
+@media (max-width:380px) {
+  .g4 { grid-template-columns:minmax(0,1fr) !important; }
+  .fcols { grid-template-columns:minmax(0,1fr) !important; }
+  .bnav a, .bnav button { font-size:9px; }
+  .bnav svg { width:20px; height:20px; }
+}
+@media (hover:none) and (max-width:860px) {
+  .card:active, .pc:active, .tile:active, .bc:active { transform:translateY(-3px) scale(.99); }
+}
+
+
+/* Final mobile polish and image rendering safeguards */
+html { scroll-behavior:smooth; }
+body { overflow-x:clip; }
+img { height:auto; }
+.hero, .ph, .bg, .feat, .story, .tile, .pc, .card, .bc {
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+@media (max-width:860px) {
+  .fab { right:14px !important; bottom:82px !important; }
+  .bnav { bottom:0; }
+  .wrap, .hero .wrap { padding-left:16px !important; padding-right:16px !important; }
+  .two, .split, .mas2, .g2, .g3, .g4, .fcols { width:100%; max-width:100%; }
+  .card, .pc, .tile, .bc, .ph { border-radius:14px; }
+  .card, .pc, .tile, .bc { box-shadow:0 7px 20px rgba(20,24,32,.12); }
+  .card:active, .pc:active, .tile:active, .bc:active, .ph:active { transform:translateY(-3px) scale(.99); }
+}

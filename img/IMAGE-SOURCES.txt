@@ -1,7 +1,16 @@
-Lakshmi Home Painting Service – image source notes
+IMAGE SOURCES USED IN THIS WEBSITE
 
-The pages now use distinct real photographs for interior painting, exterior painting, decorative wall finishes, wood finishes and rooftop waterproofing. The selected scenes do not show company logos or watermarks.
+The site uses remote image URLs in its existing inline background-image styles. They are not bundled as local image files in this ZIP.
 
-Image hosts: dbpaintingpro.com; ssl.cdn-redfin.com; reformaos.com; cdn.aryeo.com; primecoatlondon.co.uk; houstonsuperiorpainting.com; images.squarespace-cdn.com; static.wixstatic.com; images.rtl.fr; pub-a8ebad8b0a19407a910fcded3dcc2ace.r2.dev; nihon-kensetsu.jp.
+Free Unsplash photos (Unsplash License):
+- https://unsplash.com/photos/a-person-painting-a-wall-with-a-paint-roller-IfK_pZkYBas
+- https://unsplash.com/photos/a-man-with-a-paint-roller-painting-a-wall-f1UwaROA2UQ
+- https://unsplash.com/photos/a-textured-beige-wall-surface-iutexZMtf1I
 
-Images are remotely hosted and require an internet connection. Please verify each host's current terms before commercial publication.
+Other project photography used for relevant service sections:
+- https://www.prodestravaux.com/devis-travaux/peintre
+- https://primecoatlondon.co.uk/services/exterior-painting
+- https://carodreva.sk/starostlivost/lakovanie-dreva-co-sa-oplati-vediet-a-ako-postupovat/
+- https://www.isoweir.com/Blog
+
+External images require an internet connection and availability of the original image host. The logo remains the supplied local img/logo.png.
