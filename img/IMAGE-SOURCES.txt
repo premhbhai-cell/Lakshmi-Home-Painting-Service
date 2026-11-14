@@ -1,16 +1,2 @@
-IMAGE SOURCES USED IN THIS WEBSITE
-
-The site uses remote image URLs in its existing inline background-image styles. They are not bundled as local image files in this ZIP.
-
-Free Unsplash photos (Unsplash License):
-- https://unsplash.com/photos/a-person-painting-a-wall-with-a-paint-roller-IfK_pZkYBas
-- https://unsplash.com/photos/a-man-with-a-paint-roller-painting-a-wall-f1UwaROA2UQ
-- https://unsplash.com/photos/a-textured-beige-wall-surface-iutexZMtf1I
-
-Other project photography used for relevant service sections:
-- https://www.prodestravaux.com/devis-travaux/peintre
-- https://primecoatlondon.co.uk/services/exterior-painting
-- https://carodreva.sk/starostlivost/lakovanie-dreva-co-sa-oplati-vediet-a-ako-postupovat/
-- https://www.isoweir.com/Blog
-
-External images require an internet connection and availability of the original image host. The logo remains the supplied local img/logo.png.
+All service photos are now local files in img/work/ (client project photos supplied via WhatsApp): interior-*, exterior-*, texture-*, wood-*, waterproofing-*.
+Logo: img/logo.png
