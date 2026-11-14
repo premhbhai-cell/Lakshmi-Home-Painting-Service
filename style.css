@@ -125,3 +125,77 @@ img { height:auto; }
   .card, .pc, .tile, .bc { box-shadow:0 7px 20px rgba(20,24,32,.12); }
   .card:active, .pc:active, .tile:active, .bc:active, .ph:active { transform:translateY(-3px) scale(.99); }
 }
+
+/* ===== New home sections: Colours, Seaside collection, Process (+ contact cards) ===== */
+:root{--gold:#f5c04a;--red:#c0392b;--ink:#1c1c1c}
+.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red);background:#c0392b14;padding:6px 14px;border-radius:30px;margin-bottom:14px}
+.lead{font-size:17px;line-height:1.7;color:#444;margin:0 0 24px;max-width:60ch}
+.btn.line{border-color:var(--ink);color:var(--ink)}.btn.line:hover{background:var(--ink);color:#fff}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.cta-row .btn{margin:0}
+.btn{transition:transform .25s ease,box-shadow .25s ease,background .25s ease,color .25s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px #0002}
+
+.cs{position:relative}
+.cs-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:56px;align-items:center}
+.cs-grid.rev>:first-child{order:2}
+.cs-media{margin:0;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 18px 50px rgba(20,24,32,.18);transition:transform .4s ease,box-shadow .4s ease}
+.cs-media img{display:block;width:100%;height:auto;transition:transform .6s ease}
+.cs-media:hover{transform:translateY(-8px);box-shadow:0 28px 64px rgba(20,24,32,.26)}
+.cs-media:hover img{transform:scale(1.04)}
+.cs-colours{background:linear-gradient(135deg,#faf3e3 0%,#fff 60%)}
+.cs-colours .cs-media{max-width:440px;margin:0 auto}
+.cs-seaside{background:linear-gradient(135deg,#e9f1ef 0%,#fff 70%)}
+
+.fgrid{display:grid;gap:14px}
+.fcard{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #0000000d;border-radius:16px;padding:18px;box-shadow:0 6px 20px rgba(20,24,32,.08);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.fcard i{flex:0 0 52px;height:52px;border-radius:14px;display:grid;place-items:center;font-style:normal;font-size:26px;background:#f5c04a33;transition:transform .3s ease,background .3s ease}
+.fcard h3{margin:0 0 4px;font-size:18px}.fcard p{margin:0;color:#555;line-height:1.55;font-size:15px}
+.fcard:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(20,24,32,.16);border-color:#f5c04a}
+.fcard:hover i{transform:rotate(-8deg) scale(1.1);background:#f5c04a}
+
+.swatches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:6px}
+.sw{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 20px rgba(20,24,32,.1);transition:transform .3s ease,box-shadow .3s ease}
+.sw .chip{height:84px;transition:height .35s ease}
+.sw div.t{padding:14px 16px 18px}.sw h3{margin:0 0 4px;font-size:18px}.sw p{margin:0;font-size:14px;line-height:1.55;color:#555}
+.sw small{display:block;margin-top:8px;font-weight:700;color:#777;letter-spacing:.04em;font-size:12px}
+.sw:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(20,24,32,.2)}.sw:hover .chip{height:104px}
+
+.cs-process{background:#f3f9fa}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 36px}.sec-head p{color:#444;line-height:1.7;font-size:17px;margin:0}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:st}
+.step{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:16px;padding:16px 18px;border-left:5px solid var(--gold);box-shadow:0 6px 20px rgba(20,24,32,.08);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.step b.n{flex:0 0 42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--gold);font-size:18px;transition:transform .3s ease,background .3s ease,color .3s ease}
+.step h3{margin:0 0 4px;font-size:18px}.step p{margin:0;color:#555;line-height:1.55;font-size:15px}
+.step:hover{transform:translateX(6px) translateY(-3px);box-shadow:0 16px 34px rgba(20,24,32,.16);border-color:var(--red)}
+.step:hover b.n{transform:scale(1.12);background:var(--red);color:#fff}
+.cs-process .cs-media{background:#fff}
+
+.bc small{display:block;opacity:.75;font-size:14px;line-height:1.5;margin:10px 0 14px}
+.fcols>*{overflow-wrap:anywhere}
+
+.cc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.cc-card{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid #0000000d;border-radius:18px;padding:24px 20px;box-shadow:0 8px 24px rgba(20,24,32,.1);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;overflow-wrap:anywhere}
+.cc-card i{font-style:normal;font-size:30px;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:#f5c04a33;margin-bottom:8px;transition:transform .3s ease,background .3s ease}
+.cc-card h3{margin:0;font-size:18px}.cc-card span{color:#555;font-size:15px;line-height:1.5}.cc-card b{color:var(--red);font-size:14px;margin-top:6px}
+.cc-card:hover{transform:translateY(-6px);box-shadow:0 18px 38px rgba(20,24,32,.18);border-color:var(--gold)}.cc-card:hover i{transform:scale(1.1) rotate(-6deg);background:var(--gold)}
+
+/* scroll reveal (only when JS is on) */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+
+@media(max-width:1024px){.cc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:860px){
+ .cs-grid{grid-template-columns:minmax(0,1fr);gap:28px}.cs-grid.rev>:first-child{order:0}
+ .cs-colours .cs-media{max-width:340px}
+ .lead{font-size:16px}
+ .fcard,.step{padding:14px}.fcard i{flex-basis:46px;height:46px;font-size:22px}
+ .sw .chip{height:64px}.sw:hover .chip{height:76px}
+ .step:hover{transform:translateY(-3px)}
+ .cta-row .btn{flex:1 1 100%;text-align:center}
+ .sec-head{margin-bottom:24px}
+ .fcard,.sw,.step,.cc-card,.cs-media{box-shadow:0 8px 22px rgba(20,24,32,.14)}
+ .fcard:active,.sw:active,.step:active,.cc-card:active{transform:translateY(-3px) scale(.99);box-shadow:0 14px 28px rgba(20,24,32,.2)}
+}
+@media(max-width:480px){.swatches{grid-template-columns:minmax(0,1fr)}.sw{display:flex}.sw .chip{height:auto;width:84px;flex:0 0 84px}.sw:hover .chip{height:auto}.cc-grid{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}*{scroll-behavior:auto!important}.fcard,.sw,.step,.cc-card,.cs-media,.cs-media img,.btn{transition:none!important}}
